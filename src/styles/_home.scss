@@ -1,0 +1,42 @@
+.home {
+    color: white;
+  background: #0c1927;
+}
+
+.nav-container {
+  background: rgb(7, 7, 7);
+}
+
+nav {
+  width: 80%;
+  margin: auto;
+  min-height: 10vh;
+  padding: 3rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex: 1;
+  }
+
+  #logo {
+    flex: 1;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 6rem;
+        height: 6rem;
+        background: #f54538;
+        border-radius: 50%;
+        transform: translate(-30%, -15%);
+        mix-blend-mode: screen;
+    }
+  }
+}
